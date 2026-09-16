@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendências — Instalação Elétrica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>📋 Pendências — Instalação Elétrica</h1>
+    <p class="subtitle">Cabeamento estruturado e eletrocalhas</p>
+    <div class="meta-row">
+      <span><strong>Data:</strong> 16/09/2026</span>
+      <span><strong>Responsável:</strong> Ronaldo Vasconcelos</span>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="progress-label" id="progressLabel">carregando…</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="intro" class="intro">
+    <p>Toque na foto de cada pendência para ampliar. Marque a caixinha assim que resolver o item — fica salvo automaticamente e o Ronaldo já vê atualizado.</p>
+    <button id="refreshBtn" class="refresh-btn" type="button">↻ Atualizar lista</button>
+  </section>
+
+  <section id="checklist" class="checklist">
+    <div id="cardsContainer" class="cards" aria-live="polite">
+      <p class="loading">Carregando pendências…</p>
+    </div>
+  </section>
+
+  <section id="observacoes" class="observacoes">
+    <h2>📝 Observações gerais</h2>
+    <p id="obsText">Carregando…</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Checklist sincronizado automaticamente. Histórico completo disponível na <a id="issueLink" href="#" target="_blank" rel="noopener">issue do repositório</a>.</p>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
