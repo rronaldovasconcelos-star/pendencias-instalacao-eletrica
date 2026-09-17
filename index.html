@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pendências — Instalação Elétrica</title>
+<meta name="description" content="Checklist de pendências da instalação elétrica e cabeamento estruturado.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -29,25 +31,24 @@
 <main>
 
   <section id="intro" class="intro">
-    <p>Toque na foto de cada pendência para ampliar. Marque a caixinha assim que resolver o item — fica salvo automaticamente e o Ronaldo já vê atualizado.</p>
+    <p>Toque na foto para ampliar. Assim que resolver um item, marque a caixinha — fica salvo na hora e o Ronaldo já vê atualizado.</p>
     <button id="refreshBtn" class="refresh-btn" type="button">↻ Atualizar lista</button>
+    <p id="statusMsg" class="status-msg" hidden></p>
   </section>
 
   <section id="checklist" class="checklist">
-    <div id="cardsContainer" class="cards" aria-live="polite">
-      <p class="loading">Carregando pendências…</p>
-    </div>
+    <div id="cardsContainer" class="cards" aria-live="polite"></div>
   </section>
 
   <section id="observacoes" class="observacoes">
     <h2>📝 Observações gerais</h2>
-    <p id="obsText">Carregando…</p>
+    <p>De resto, são os ajustes pós-obra: fixar as eletrocalhas, ajustar os fixadores de teto e terminar os terminais de RJ45. Ainda não consegui testar os cabos — pedi as fitas de velcro para fechar os racks, mas acredito que estejam transportando dados. Percebi que as pontas dos cabos estão danificadas, provavelmente por passarem pelas calhas; porém, como não estão rompidas nem danificadas ao longo do caminho, deve funcionar normalmente.</p>
   </section>
 
 </main>
 
 <footer>
-  <p>Checklist sincronizado automaticamente. Histórico completo disponível na <a id="issueLink" href="#" target="_blank" rel="noopener">issue do repositório</a>.</p>
+  <p>Cada marcação fica registrada com data e hora.</p>
 </footer>
 
 <div id="lightbox" class="lightbox" hidden>
@@ -55,9 +56,8 @@
   <img id="lightboxImg" src="" alt="">
 </div>
 
-<div id="toast" class="toast" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
 
-<script src="config.js"></script>
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
