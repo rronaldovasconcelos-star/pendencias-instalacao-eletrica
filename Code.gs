@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 /**
  * Checklist de pendências — Instalação Elétrica
  * Cole este código em: Planilha > Extensões > Apps Script

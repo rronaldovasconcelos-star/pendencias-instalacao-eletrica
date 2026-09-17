@@ -1,6 +1,6 @@
 // ===== Configuração =====
 // Cole aqui a URL do App da Web do Google Apps Script (termina em /exec)
-const API_URL = 'COLE_A_URL_DO_APPS_SCRIPT_AQUI';
+const API_URL = 'https://script.google.com/macros/s/AKfycbzXGPyc6_7Bw3cbX3xZzjQHQKYND5qDri9VqELB6BZMD6w-bS6VT2Tm1T2Y8Ypks9Yr/exec';
 
 // ===== Dados das pendências =====
 const PENDENCIAS = [
